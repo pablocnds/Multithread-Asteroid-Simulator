@@ -13,9 +13,9 @@ int main(int argc, char**argv)
     int values[4];
     for (int i = 1; i < 5; i++)
     {
-        std::stringstream ss(argv[1]);
+        std::stringstream ss(argv[i]);
         if( ss >> values[i-1] ) {}
-            // Pass num to constructor
+            // Pass values to constructor
         else 
         {
             std::cout << "ERROR: Invalid arguments." << std::endl;
