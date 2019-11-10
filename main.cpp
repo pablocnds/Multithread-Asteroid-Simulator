@@ -1,5 +1,8 @@
 #include <iostream>
 #include <sstream>
+#include <chrono>
+#include <ctime>
+#include <ratio>
 #include "./headers/Nasteroids.h"
 
 using namespace std;
@@ -28,7 +31,11 @@ int main(int argc, char**argv)
     }
 
     Nasteroids* simulation = new Nasteroids(values[0], values[1], values[2], values[3]);
+//    std::chrono::high_resolution_clock::time_point t1 = std::chrono::high_resolution_clock::now();
     simulation->printConfig("init_conf.txt");
+//    std::chrono::high_resolution_clock::time_point t2 = std::chrono::high_resolution_clock::now();
+//    std::chrono::duration<double> time_span = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1);
+//    cout << time_span.count() << endl;
     //simulation->simulate();
     //simulation->printState("out.txt");
 

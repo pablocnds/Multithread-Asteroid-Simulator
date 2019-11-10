@@ -1,4 +1,4 @@
-class Body 
+class Planet 
 {
 public:
     double x;
