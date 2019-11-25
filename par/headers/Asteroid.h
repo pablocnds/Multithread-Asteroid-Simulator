@@ -6,6 +6,6 @@ public:
     double m;
     double vx;
     double vy;
-    double* forcesx;
-    double* forcesy;
+    double forcex;
+    double forcey;
 };

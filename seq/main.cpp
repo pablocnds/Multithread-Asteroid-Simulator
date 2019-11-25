@@ -3,6 +3,7 @@
 #include <chrono>
 #include <ctime>
 #include <ratio>
+#include <iomanip>
 #include "./headers/Nasteroids.h"
 
 using namespace std;
@@ -11,6 +12,8 @@ void parseError();
 
 int main(int argc, char**argv)
 {
+    //std::chrono::high_resolution_clock::time_point t1 = std::chrono::high_resolution_clock::now();
+
     if (argc != 5)
     {
         parseError();
@@ -36,8 +39,13 @@ int main(int argc, char**argv)
 //    std::chrono::high_resolution_clock::time_point t2 = std::chrono::high_resolution_clock::now();
 //    std::chrono::duration<double> time_span = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1);
 //    cout << time_span.count() << endl;
-    //simulation->simulate();
-    //simulation->printState("out.txt");
+    simulation->simulate();
+    simulation->printState("out.txt");
+    simulation->close();
+
+    //std::chrono::high_resolution_clock::time_point t2 = std::chrono::high_resolution_clock::now();
+    //std::chrono::duration<double> time_span = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1);
+    //cout << setprecision(8) << (time_span.count()*1000) << endl;
 
     return 0;
 }
