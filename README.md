@@ -1,8 +1,7 @@
-Trabajo de paralelismo con OpenMP en C++.
-Asignatura de Arquitectura de Computadores, uc3m.
+#Multi-Threaded Asteroid simulation
 
-Calificada con un 9.8 sobre 10.
+Work of paralelism with OpenMP in C++ with Bash Script.
 
-El trabajo consiste en simular una cantidad variable de asteroides y planetas implementando interacciones gravitatorias y colisiones. El objetivo es paralelizar en la CPU el algoritmo de simulación de la forma más eficiente posible sin perder precisión.
+The project consist of a simulation with a variable ammount of asteroids and planets including gravitational interactions and collisions. The objective is to implement this simulation and boost its performance with multi-thread parallelization.
 
-Adicionalmente he usado Bash Script para la automatización de las pruebas y cálculo de valores.
+Bash Script is used to automate testing and check that no precision is lost in the multi-threaded version.
