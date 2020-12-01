@@ -1,4 +1,4 @@
-#Multi-Threaded Asteroid simulation
+# Multi-Threaded Asteroid simulation
 
 Work of paralelism with OpenMP in C++ with Bash Script.
 
